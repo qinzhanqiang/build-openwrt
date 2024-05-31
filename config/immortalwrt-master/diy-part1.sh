@@ -9,6 +9,12 @@
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
+sed -i '$a src-git ysx88 https://github.com/ysx88/openwrt-packages' feeds.conf.default
+sed -i '$a src-git packages https://github.com/immortalwrt/packages.git' feeds.conf.default
+sed -i '$a src-git luci https://github.com/immortalwrt/luci.git' feeds.conf.default
+sed -i '$a src-git routing https://github.com/openwrt/routing.git' feeds.conf.default
+sed -i '$a src-git telephony https://github.com/openwrt/telephony.git' feeds.conf.default
+
 # other
 # rm -rf package/emortal/{autosamba,ipv6-helper}
 
